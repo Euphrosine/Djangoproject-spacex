@@ -1,0 +1,80 @@
+{% extends '../visitor-base.html' %}
+
+{% block title %}
+Post list
+{% endblock %}
+{% block content %}
+
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="card col-lg-8 p-4">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">{{ details.Title }}</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on  January 1, 2021 by {{ details.Author }}</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">{{ details.Genre }}</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <figure class="mb-4"><img class="img-fluid rounded" src="{{ details.Poster.url }}" alt="..." /></figure>
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4 text-dark"> {{ details.Description }}</p>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Related Posts</div>
+                        <div class="card-body">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                {% for rel in related %}
+
+
+                                  <div class="col-md-4">
+                                    <div class="card h-150">
+                                        <a href="{{ rel.id }}">  <img src="{{ rel.Poster.url }}" class="card-img img-thumbnail" alt="..."> </a>
+                                    </div>
+                                  </div>
+                              {% endfor %}
+
+                                </div>
+
+                        </div>
+                    </div>
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Movie Categories</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">Sci-Fi</a></li>
+                                        <li><a href="#!">Drama</a></li>
+                                        <li><a href="#!">Horror</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">Comedy</a></li>
+                                        <li><a href="#!">Action</a></li>
+                                        <li><a href="#!">Adventure</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
