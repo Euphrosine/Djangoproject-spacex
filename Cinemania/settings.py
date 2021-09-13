@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-uy6v$pjv7o=6&phhg(t98v8r(pctzcvd=49v*mb)$5@htrf(mr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['cinemania-spacex.herokuapp.com']
 
