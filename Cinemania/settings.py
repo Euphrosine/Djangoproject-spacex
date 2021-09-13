@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'Cinemania.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd236atohk6eddo',
-        'USER': 'mzpvmzjljqxbua',
-        'PASSWORD': 'a2dc187f505a50bc48ba978a48236623fe1e66007c3a787b150df6e17f1242ca',
-        'HOST': 'ec2-54-147-126-173.compute-1.amazonaws.com',
+        'NAME': 'cinemania',
+        'USER': 'postgres',
+        'PASSWORD': '123',
+        'HOST': '127.0.0.1',
         'PORT':'5432',
     }
 }
