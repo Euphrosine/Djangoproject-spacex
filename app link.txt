@@ -1,1 +1,1 @@
-https://cinemania-spacex.herokuapp.com/
+https://cinemaniaspacex.herokuapp.com/
