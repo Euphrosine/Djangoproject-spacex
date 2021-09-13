@@ -61,7 +61,7 @@ def login(request):
 
 
 def dashboard(request):
-    return render(request, "Dashboard/Dashboard.html")
+    return render(request, "Dashboard/dashboard.html")
 
 
 def create(request):
