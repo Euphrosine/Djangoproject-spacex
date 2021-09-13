@@ -11,8 +11,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +26,8 @@ SECRET_KEY = 'django-insecure-uy6v$pjv7o=6&phhg(t98v8r(pctzcvd=49v*mb)$5@htrf(mr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cinemania-spacex.herokuapp.com']
+ALLOWED_HOSTS = ['djangocinemania.herokuapp.com']
+
 
 # Application definition
 
@@ -78,12 +81,12 @@ WSGI_APPLICATION = 'Cinemania.wsgi.application'
 
 DATABASES = {
     'default': {
-     'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'cinemania',
         'USER': 'postgres',
         'PASSWORD': '123',
         'HOST': '127.0.0.1',
-        'PORT':'5432',
+        'PORT': '5432',
     }
 }
 
@@ -120,9 +123,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 django_heroku.settings(locals())
+
+# Location for static files root folder
+
 # Location for static files root folder
 STATICFILES_DIRS = [
     BASE_DIR / "static",
