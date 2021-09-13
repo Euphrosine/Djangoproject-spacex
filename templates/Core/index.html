@@ -62,7 +62,9 @@
         <!--    TODO: Fetch data from database-->
     <div class="col-md-12 col-lg-6 text-center align-items-start justify-content-between">
         <p class="text-justify pl-5">
- <!-- paste cutted code here--->
+{% for item in about %}
+
+            {{ item.Content|truncatewords:55 }}
         </p>
     <a href="#">
         <button class="btn btn-danger btn-lg">Read more</button>
