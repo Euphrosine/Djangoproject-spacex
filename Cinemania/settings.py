@@ -122,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-
+django_heroku.settings(locals())
 # Location for static files root folder
 STATICFILES_DIRS = [
     BASE_DIR / "static",
