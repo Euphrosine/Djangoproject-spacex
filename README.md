@@ -1,3 +1,5 @@
+# This is our app link 
+https://cinemaniaspacex.herokuapp.com/
 # Django project - Cinemaniacs Community
 ## ITE3162 - Interactive web Development course Final Project
 This project is designed to allow students to demonstrate knowledge and skills (HMTL, CSS, Bootstrap, Python and Django) 
@@ -19,4 +21,5 @@ The project files include a mockup of the desired website design. (fonts and fon
 7. The preferred database for this project will be PostgreSQL
 8. At the completion, your group's version of the project's code should be pushed to github.
 9. The website should be published/deployed using the platform of your choice([Python anywhere](https://www.pythonanywhere.com/), [Heroku](https://devcenter.heroku.com/articles/deploying-python), [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-platform) or any other platform.
-
+### This is our app link 
+https://cinemaniaspacex.herokuapp.com/
